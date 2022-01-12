@@ -46,6 +46,7 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Flex
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
