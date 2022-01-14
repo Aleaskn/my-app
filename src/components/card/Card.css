@@ -1,8 +1,8 @@
-/*.section.card__container {
-    height: 606px;
-    width: 360px;
+.card__container {
+    height: 615px;
+    width: 366px;
     padding: 10px;
-} */
+} 
 
 .card {
     width: 346px;
@@ -11,11 +11,20 @@
     background-color: hsl(216, 50%, 16%);
     border-radius: 18px;
     box-sizing: border-box;
+    
 }
 
 .card__img {
     width: 100%;
     height: auto; 
+    position: relative;
+    /* overflow: hidden; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 18px;
 }
 
 img {
@@ -25,12 +34,40 @@ img {
     border-radius: 18px;  
 }
 
+.img__icon-view {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,255,247,.502);
+    opacity: 0;
+    border-radius: 18px;
+    transition: all .4s ease;
+}
+
+.img__icon-view:hover {
+    opacity: 1;
+    transition: all .4s ease;
+
+}
+
 .card__title {
 
 }
 
 .card__title > h2 {
     color: white;
+    text-transform: capitalize;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.card__title > h2:hover {
+    transition: all .4s ease;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .card__text {
@@ -43,8 +80,9 @@ img {
     display: flex;
 }
 
-.cripto__Eth {
+.cripto__eth {
     display: flex;
+    margin-right: 5px;
 }
 
 .cripto-info__value {
@@ -52,10 +90,17 @@ img {
     width: 100%;
     padding-bottom: 30px;
     display: flex;
+    align-items: center;
 }
 
 .cripto-info__value > h3 {
     color:hsl(178, 100%, 50%);
+    text-transform: uppercase;
+}
+
+.cripto__Data {
+    display: flex;
+    margin-right: 5px;
 }
 
 .cripto-info__data {
@@ -64,6 +109,7 @@ img {
     padding-bottom: 30px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .cripto-info__data > h3 {
@@ -80,16 +126,16 @@ img {
 }
 
 .card__creator {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .card__creator__img {
-border-radius: 50%;
-height: 33px;
-width: 33px;
-margin-right: 20px;
-border: 2px solid white;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    margin-right: 20px;
+    border: 2px solid white;
 }
 
 .card__creator__name {
@@ -100,10 +146,18 @@ border: 2px solid white;
     color: hsl(215, 51%, 70%); 
     display: flex;
     justify-content: flex-start;
+    text-transform: capitalize;
+}
+
+.card__creator__name > h3 >a:hover {
+    transition: all .4s ease;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .card__creator__name > h3 > a {
     color:white;
     text-decoration: none;
     margin-left: 5px;
+    transition: all .4s ease;
 }
