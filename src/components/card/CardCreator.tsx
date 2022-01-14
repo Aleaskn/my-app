@@ -4,19 +4,28 @@ import React, { ImgHTMLAttributes } from 'react'
 import { TypeOfTag } from 'typescript'
 
 
-const CardCreator : React.FC<{}> = (props) => {
+interface ICardCreator {
+ data : {
+    creatorAvatar : string,
+    creatorName : string
+ }  
+}
+
+const CardCreator : React.FC<ICardCreator> = ({
+  data
+}) => {
   return (
 <div className='card__creator'>
 
     <div className='card__creator__img'>
 
-        <img src={ImgAvatar}/>
+        <img src={require('../../assets/img/' + data.creatorAvatar)}/>
 
     </div>
 
     <div className='card__creator__name'>
 
-       <h3>creation of <a href="#">Jules Wyvern</a></h3> 
+       <h3>creation of <a href="#">{ data.creatorName }</a></h3> 
             
     </div>
 </div>

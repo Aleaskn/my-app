@@ -4,12 +4,16 @@ import ImgEquilibrium from '../../assets/img/image-equilibrium.jpg';
 import { ReactComponent as IconView } from '../../assets/icon/icon-view.svg'
 import './CardImg.css'
 
+interface ICardImg {
+      imgUrl : string
 
-const CardImg : React.FC<{}> = (props) => {
+}
+
+const CardImg : React.FC<ICardImg> = ({ imgUrl }) => {
    return (
 <div className='card__img'>
 
-     <img src={ImgEquilibrium} alt='equilibrium' />
+     <img src={require('../../assets/img/' + imgUrl)} alt='equilibrium' />
 
       <div className='img__icon-view'>
 
