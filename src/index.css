@@ -2,7 +2,6 @@
   font-family: 'Outfit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* box-sizing: border-box; */
 }
 
 body {
@@ -21,4 +20,8 @@ h2 {
 
 h3 {
   font-size: 16px;
+}
+
+p {
+  font-size: 18px;
 }

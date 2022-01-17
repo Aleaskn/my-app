@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './components/card/Card';
+import { ReactComponent as IconEth } from '../../assets/icon/icon-ethereum.svg';
 
 const cards = [
   {
@@ -18,16 +19,16 @@ const cards = [
     }
   },
   {
-    img : 'image-equilibrium.jpg',
-    title : 'Pippo #3429',
-    context : 'Our Equilibrium collection promotes balance and calm',
+    img : 'polpo.png',
+    title : 'Polpo con patate #1603',
+    context : 'Ciao, sono Polpo!',
     value : {
-      value : '0.041',
-      tipeValue : 'btc',
+      value : '15K',
+      tipeValue : '$',
     },
-    expireData : '3 days left',
+    expireData : '5 days left',
     creator : {
-      creatorAvatar : 'image-avatar.png',
+      creatorAvatar : 'polpo.png',
       creatorName : 'Alessandro Cristalli'
     }
   }

@@ -53,7 +53,7 @@ const Card : React.FC<ICardAllData> = ({
 
                     <div className='cripto-info__value'>
 
-                            <IconEth className='cripto__eth' />
+                        <IconEth className='cripto-info__eth'/>
 
                         <h3>{ data.value.value }{ data.value.tipeValue }</h3>
 

@@ -47,9 +47,9 @@
     display: flex;
 }
 
-.cripto__eth {
+.cripto-info__eth {
     display: flex;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .cripto-info__value {
